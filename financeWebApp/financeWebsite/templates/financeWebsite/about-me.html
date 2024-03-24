@@ -1,14 +1,47 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel = "stylesheet" href = "{% static 'financeWebsite/about.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> About Charana </h1>
-    <p> bio </p>
-<img src="{% static 'financeWebsite/images/family.jpeg' %}" alt="Charana with Family">
-<img src="{% static 'financeWebsite/images/cambodia.jpeg' %}" alt="Charana in cultural clothes infront of Cambodian Flag">
+    <div class="header">
+<h1>Meet Charana</h1>
+</div>
+
+<div class ="culture">
+    <div class="img-container">
+        <img src = "{% static 'financeWebsite/images/cambodia.jpeg' %}" height = "410" width = "350" alt = "Cultural photo of Charana">
+    </div>
+    <div class="text-container">
+        <h2> My Culture</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    </div>
+<div class = "family">
+    <div class="img-family">
+        <img src = "{% static 'financeWebsite/images/family.jpeg' %}" height = "350" width = "470" alt = "Charana with her family">
+    </div>
+    <div class="text-family">
+    <h2> My Family</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci a scelerisque purus semper eget duis at. Pretium fusce id velit ut tortor pretium viverra. Turpis massa sed elementum tempus egestas sed sed. Est pellentesque elit ullamcorper dignissim cras. Elit at imperdiet dui accumsan sit. Vel pharetra vel turpis nunc eget lorem dolor sed. Tempor nec feugiat nisl pretium. Augue ut lectus arcu bibendum at varius vel pharetra. Tortor pretium viverra suspendisse potenti nullam ac tortor. </p>
+</div>
+</div>
+
+ <div class="copyright">
+            <p> Copyright <i class="fa-regular fa-copyright"></i> CDLC Finance | 2024 </p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
 
 </body>
 </html>
